@@ -7,6 +7,7 @@ class Login(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True)
     password = Column(String)
+    age = Column(Integer, nullable=True)
     email = Column(String, unique=True, index=True)
 
     def __repr__(self):
